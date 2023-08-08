@@ -35,9 +35,7 @@ button{
     border: none !important;
 }
 
-
-
-.navbar{
+.nav{
     overflow: hidden;
     background-color: #ffffff;
     padding: 0px 40px !important;
@@ -46,22 +44,7 @@ button{
     border-radius: 10px;
     
 }
-
-@media only screen and (max-width: 850px) {
-    .navbar{
-       display: none !important;
-    }
-   }
-
-   @media only screen and (min-width: 850px) {
-    .mobile-navbar{
-       display: none !important;
-    }
-   }
-
-
-
-.navbar a{
+.nav a{
     float: left;
     color: black;
     text-align: center;
@@ -73,14 +56,14 @@ button{
     border-bottom:5px hidden;
 }
 
-.navbar a.logo{
+.nav a.logo{
     font-size:25px;
     font-weight: bold;
 }
 .logo span{
     color:rgb(18, 181, 116)
 }
-.navbar a:hover{
+.nav a:hover{
     color:black;
 }
 
@@ -103,16 +86,40 @@ button{
 .menu a:hover{
     color:rgb(18, 181, 116);
 }
-
-@media screen and (max-width: 500){
-    .navbar{
-        float: none;
-        display: block;
-    text-align: left;
-}  
-.menu{
-    float: none;
+.mobile-nav{
+    display: none;
 }
+@media screen and (max-width: 850px){
+            .nav{
+                display: none !important;
+                
+            }
+            .mobile-nav{
+                display: block;
+                background-color: white;
+                position: fixed;
+                width: 100%;
+                height:fit-content;
+                bottom: 0px;
+                display: flex;
+                justify-content: space-around;
+                border-top: 1px solid grey;
+                padding: 5px 10px;
+                
+                
+            }
+            
+            .mobile-nav a{
+                text-decoration: none;
+                background-color: #f4f4f4;
+                position: relative;
+                font-size: 40px;
+                padding: 5px 12px;
+                border: 1px solid grey;
+                border-radius: 5px;
+
+            }
+           
 }
 
 .line{
